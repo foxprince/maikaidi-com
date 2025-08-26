@@ -34,6 +34,13 @@ jobs:
       - name: Build (Next static export)
         run: npm run build
 
+      - name: Export static site
+        run: |
+          npx -y next@15 export
+          echo "--- out contents ---"
+          ls -la out | sed -n '1,200p'
+          test -f out/index.html || (echo "ERROR: out/index.html not found" && exit 1)
+
       - name: Add .nojekyll
         run: echo "" > out/.nojekyll
 
