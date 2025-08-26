@@ -12,9 +12,8 @@ const notoSansSC = Noto_Sans_SC({
 })
 
 export const metadata: Metadata = {
-  title: "迈凯迪科技 - 专业电商平台开发与ERP系统搭建",
-  description: "专业提供电商平台开发、网站搭建、ERP系统搭建等数字化解决方案，助力企业数字化转型",
-  generator: "v0.app",
+  title: "MaiKaiDi",
+  description: "Professional provider of comprehensive digital solutions including e-commerce platform development, website construction, and ERP system implementation. Drive business growth with technology and help your enterprise stand out in the digital era."
 }
 
 export default function RootLayout({
