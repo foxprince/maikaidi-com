@@ -19,7 +19,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-primary/95 backdrop-blur supports-[backdrop-filter]:bg-primary/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="h-8 w-8 rounded-lg bg-accent flex items-center justify-center">
               <span className="text-accent-foreground font-bold text-lg">M</span>
@@ -49,7 +49,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5"></div>
-        <div className="container relative">
+        <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-6">
               Professional Digital Solutions Provider
@@ -78,7 +78,7 @@ export default function HomePage() {
 
       {/* Services Section */}
       <section id="services" className="py-20 bg-muted/30">
-        <div className="container">
+        <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Core Business Services</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -187,7 +187,7 @@ export default function HomePage() {
 
       {/* Features Section */}
       <section id="features" className="py-20">
-        <div className="container">
+        <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Why Choose Us</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -237,7 +237,7 @@ export default function HomePage() {
 
       {/* Testimonials Section */}
       <section id="cases" className="py-20 bg-muted/30">
-        <div className="container">
+        <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Client Success Stories</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -305,7 +305,7 @@ export default function HomePage() {
 
       {/* CTA Section */}
       <section id="contact" className="py-20 bg-primary">
-        <div className="container">
+        <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground mb-6">
               Ready to Start Your Digital Transformation Journey?
@@ -332,7 +332,7 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className="py-12 bg-sidebar border-t">
-        <div className="container">
+        <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
