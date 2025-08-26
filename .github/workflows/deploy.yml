@@ -25,16 +25,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
+          cache: 'npm'
 
-      - name: Install pnpm
-        run: npm i -g pnpm@9
+      - name: PNPM version
+        run: npx -y pnpm@9 --version
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npx -y pnpm@9 install --frozen-lockfile
 
       - name: Build (Next static export)
-        run: pnpm build
+        run: npx -y pnpm@9 build
 
       - name: Add .nojekyll
         run: echo "" > out/.nojekyll
