@@ -26,23 +26,25 @@ export default function HomePage() {
             </div>
             <span className="text-primary-foreground font-bold text-xl">Maikaidi Tech</span>
           </div>
-          <nav className="hidden md:flex items-center space-x-6">
-            <a href="#services" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-              Services
-            </a>
-            <a href="#features" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-              Advantages
-            </a>
-            <a href="#cases" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-              Case Studies
-            </a>
-            <a href="#contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-              Contact
-            </a>
-          </nav>
-          <Button variant="secondary" size="sm">
-            Free Consultation
-          </Button>
+          <div className="flex items-center space-x-6">
+            <nav className="hidden md:flex items-center space-x-6">
+              <a href="#services" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                Services
+              </a>
+              <a href="#features" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                Advantages
+              </a>
+              <a href="#cases" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                Case Studies
+              </a>
+              <a href="#contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                Contact
+              </a>
+            </nav>
+            <Button variant="secondary" size="sm">
+              Free Consultation
+            </Button>
+          </div>
         </div>
       </header>
 
