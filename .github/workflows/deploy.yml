@@ -35,11 +35,8 @@ jobs:
         run: pnpm install
 
       - name: Build (Next static export)
-        run: pnpm run build
-
-      - name: Export static site
         run: |
-          npx -y next@15 export
+          pnpm run build
           echo "--- out contents ---"
           ls -la out | sed -n '1,200p'
           test -f out/index.html || (echo "ERROR: out/index.html not found" && exit 1)
