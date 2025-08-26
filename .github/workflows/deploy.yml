@@ -26,11 +26,16 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies (npm)
-        run: npm install --legacy-peer-deps --no-audit --no-fund
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8
+
+      - name: Install dependencies (pnpm)
+        run: pnpm install
 
       - name: Build (Next static export)
-        run: npm run build
+        run: pnpm run build
 
       - name: Export static site
         run: |
