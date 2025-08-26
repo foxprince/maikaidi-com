@@ -89,3 +89,6 @@ pnpm build
 
 - Ensure your app uses only static features supported by `next export`.
 - If you see routing 404s, confirm that every route you need exists as a prerendered HTML file or links from the UI.
+
+
+测试部署
