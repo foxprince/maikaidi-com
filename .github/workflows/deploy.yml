@@ -27,7 +27,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies (npm)
-        run: npm install
+        run: npm install --legacy-peer-deps --no-audit --no-fund
 
       - name: Build (Next static export)
         run: npm run build
